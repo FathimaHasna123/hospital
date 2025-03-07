@@ -1,18 +1,18 @@
 .card-container{
 perspective: 1000px;
 display: flex;
-justify-content: center; /* Centering the cards */
-align-items: center; /* Aligning the cards vertically */
+justify-content: center; 
+align-items: center; 
 margin-bottom: 20px; 
 }
 .card{
     position: relative;
-    width: 300px;
+    width: 350px;
     height: 400px;
     transform-style: preserve-3d;
     transition: transform 0.6s;
-    border-radius: 10px; /* Rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds shadow to cards */
+    border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin: 10px;
 
 }
