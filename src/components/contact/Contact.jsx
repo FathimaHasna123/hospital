@@ -1,24 +1,38 @@
 import React from "react"
-import { ConfigProvider, Form, Input } from "antd"
+import { Button, ConfigProvider, Form, Input, message } from "antd"
 import { FaClock, FaPhone } from "react-icons/fa6"
 import { FiMapPin } from "react-icons/fi"
+import { useCreateContact } from "../../utils/contact/contactHook";
 
 function Contact() {
   const [form] = Form.useForm();
+  const {mutate:Create} = useCreateContact()
 
   
   const onFinish = (values) => {
-    console.log("Form Values: ", values)}
+    Create(values, {
+        onSuccess() {
+            message.success('Created successfully');
+            setAddModal(false);
+            form.resetFields();
+            refetch();
+        },
+        onError() {
+            message.error('Failed');
+        }
+    });
+};
+
 
   return (
     <>
-    <div className="w-full h-[800px] flex justify-center items-center">
+    <div className="w-full h-[750px] flex justify-center items-center">
   <div className="w-full flex justify-center items-center mb-6">
     <img className="w-full md:w-[800px] h-[700px] object-cover" src="https://medicare-shreethemes.vercel.app/static/media/contact.7f238cfabf05a94de88f.png" alt="" />
   </div>
 
   <div className="w-full flex justify-center items-center">
-    <div className="w-full max-w-[600px] h-auto md:h-[500px] justify-center md:ml-[-400px]">
+    <div className="w-full max-w-[600px] h-auto md:h-[600px] justify-center md:ml-[-400px]">
       <Form layout="vertical" onFinish={onFinish} form={form}>
         <ConfigProvider theme={{
           components: {
@@ -76,14 +90,14 @@ function Contact() {
         </ConfigProvider>
 
         <Form.Item>
-          <button type="submit" className="py-3 px-16 bg-blue-600 hover:bg-blue-800 text-white text-[30px] w-full md:w-auto">Send</button>
+          <Button type="primary" htmlType="submit" className="py-6 px-16 bg-blue-600 hover:bg-blue-800 text-white text-[30px] w-full md:w-auto">Send</Button>
         </Form.Item>
       </Form>
     </div>
   </div>
 </div>
 
-<div className="w-full h-auto md:h-[500px] flex justify-center items-center space-y-6 md:space-x-9 md:space-y-0 flex-col md:flex-row">
+<div className="w-full h-auto md:h-[300px] flex justify-center items-center space-y-6 md:space-x-9 md:space-y-0 flex-col md:flex-row">
   <div className="bg-blue-600 hover:bg-blue-800 w-full md:w-[400px] h-[200px] text-white rounded-md flex flex-col items-center justify-center">
     <FaPhone className="w-[80px] h-[60px]" />
     <h1 className="text-[25px] text-center mt-4">+152 534-468-854</h1>

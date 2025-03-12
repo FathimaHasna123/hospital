@@ -21,8 +21,8 @@ function About () {
 
   <div className="w-full md:w-[40%] py-[40px] md:py-[60px] space-y-6 text-center md:text-left">
     <h1 className="text-[30px] md:text-[45px] text-white font-bold">Good <span className="text-blue-600">Services</span> And Better <br />Health By Our <span className="text-blue-600">Specialists</span></h1>
-    <p className="text-[16px] md:text-[24px] font-medium ">We value every human life placed in our hands and constantly work towards <br /> meeting the expectations of our patients.</p>
-    <p className="text-[16px] md:text-[24px] font-medium "> The most well-known dummy text is the 'Lorem Ipsum', which is said to have <br /> originated in the 16th century. Lorem Ipsum is composed in a pseudo-Latin <br /> language which more or less corresponds to 'proper' Latin. It contains a series <br /> of real Latin words.</p>
+    <p className="text-[16px] md:text-[24px] font-medium ">We value every human life placed in our hands and constantly work towards  meeting the expectations of our patients.</p>
+    <p className="text-[16px] md:text-[24px] font-medium "> The most well-known dummy text is the 'Lorem Ipsum', which is said to have  originated in the 16th century. Lorem Ipsum is composed in a pseudo-Latin  language which more or less corresponds to 'proper' Latin. It contains a series  of real Latin words.</p>
     <button className="bg-blue-600 text-white text-center text-[18px] hover:bg-blue-800 p-[20px] w-full md:w-auto"> Make Appointment</button>
   </div>
 </div>
@@ -30,10 +30,10 @@ function About () {
 
 <div className="w-full h-[500px] flex flex-col md:flex-row justify-between items-center">
     
-    <div className="w-full md:w-[60%] h-auto mt-12 md:mt-18 md:ml-20 px-4">
+    <div className="w-full md:w-[60%] h-auto mt-12 md:mt-10 md:ml-20 px-4">
         <h3 className="text-[24px] md:text-[28px] text-blue-600 font-mono">What we achieved?</h3>
         <h1 className="text-[30px] md:text-[38px] mt-2 font-semibold">Beyond Conventional <br /> Agencies.</h1>
-        <p className="text-[16px] md:text-[22px] mt-4">
+        <p className="text-[16px] md:text-[20px] mt-4">
             As a leading college in Auckland, we look to engage with our student beyond <br />
             the conventional design and development school relationship, becoming a <br />
             partner to the people and companies we work with.

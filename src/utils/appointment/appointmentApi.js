@@ -7,13 +7,9 @@ export const getAppointment = ()=>{
 }
 
 export const createAppointment = (data)=>{
-    return apiClient.post('/appointmentApi',data)
+    return apiClient.post('/appointmentApi/',data)
 }
 
-export const updateAppointment = (data)=>{
-    return apiClient.put(`/appointmentApi/${data.id}`,data.data)
-}
-
-export const deleteAppointmnet = (id)=>{
-    return apiClient.delete(`/appointmentApi/${id}`)
+export const getDepartment = ()=>{
+    return apiClient.get('/departmentApi')
 }

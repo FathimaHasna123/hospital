@@ -74,10 +74,10 @@ function Home() {
     </Carousel> 
 
 {/* 1 */}
-    <div className="w-full h-[200px] flex justify-center  ">
+    <div className="w-full h-[100px] flex justify-center  ">
       <div className="grid grid-flow-row lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-[500px] mt-[-80px] "  >
 
-        <div className="h-[150px] bg-blue-600 hover:bg-blue-800 w-[500px] text-white flex justify-center items-center flex-col relative left-40" >
+        <div className="h-[150px] bg-blue-600 hover:bg-blue-800 w-[500px] text-white flex justify-center items-center flex-col relative left-[50px]" >
         <div class="w-28 h-28 bg-blue-400 rounded-full  flex justify-center items-center  absolute left-[-40px] ">
           <img className="w-14 h-14" src="https://uiparadox.co.uk/templates/medicare/v3/assets/media/icons/benefits-1.png" alt="" />
         </div>
@@ -85,7 +85,7 @@ function Home() {
           <p className="text-center text-[18px] ml-[40px] mt-4">Lorem ipsum dolor sit amet consect <br /> etur massa mauris convallis.</p>
         </div>
 
-        <div className="h-[150px] bg-blue-600 hover:bg-blue-800 w-[500px] text-white flex justify-center items-center flex-col relative left-20 ">
+        <div className="h-[150px] bg-blue-600 hover:bg-blue-800 w-[500px] text-white flex justify-center items-center flex-col relative left-[60px] ">
         <div class="w-28 h-28 bg-blue-400 rounded-full  flex justify-center items-center  absolute left-[-40px] ">
           <img className="w-14 h-14" src="https://uiparadox.co.uk/templates/medicare/v3/assets/media/icons/benefits-2.png" alt="" />
         </div>
@@ -93,7 +93,7 @@ function Home() {
           <p className="text-center text-[18px] ml-[40px] mt-4">Our emergency diagnostics services <br /> help you  get the most minimal time.</p>
         </div>
 
-        <div className="h-[150px] bg-blue-600 hover:bg-blue-800 w-[500px] text-white flex justify-center items-center flex-col relative left-20 ">
+        <div className="h-[150px] bg-blue-600 hover:bg-blue-800 w-[500px] text-white flex justify-center items-center flex-col relative left-[70px] ">
         <div class="w-28 h-28 bg-blue-400 rounded-full  flex justify-center items-center  absolute left-[-40px] ">
           <img className="w-14 h-14" src="https://uiparadox.co.uk/templates/medicare/v3/assets/media/icons/benefits-3.png" alt="" />
         </div>
@@ -142,7 +142,7 @@ function Home() {
  <div className="py-16 px-6 sm:px-10 md:px-20 lg:px-32 xl:px-40 mt-[300px]">
   <h1 className="text-[36px] sm:text-[50px] md:text-[70px] lg:text-[80px]">Your <span className="text-blue-600">Health</span> is Our <span className="text-blue-600">Priority</span></h1>
   <p className="text-[16px] sm:text-[20px] md:text-[24px]"> We can manage your dream building. A small river named Duden flows by their place.</p>
-   <button className="bg-blue-600 text-white hover:bg-blue-800 p-[20px] sm:p-[18px] md:p-[30px] text-[18px] sm:text-[16px] md:text-[18px] mt-8 sm:mt-10 ml-[0px] sm:ml-[100px] md:ml-[350px] lg:ml-[450px] rounded">Search places </button>
+   <button className="bg-blue-600 text-white hover:bg-blue-800 p-[20px] sm:p-[18px] md:p-[20px] text-[20px] sm:text-[16px] md:text-[18px] mt-8 sm:mt-10 ml-[0px] sm:ml-[100px] md:ml-[350px] lg:ml-[450px] rounded">Search places </button>
     </div>
   
   </div>
@@ -227,7 +227,7 @@ function Home() {
 
 {/* 5 */}
 
-<div className="w-full h-[80vh]">
+<div className="w-full h-[90vh]">
   <h1 className="text-[36px] sm:text-[50px] md:text-[60px] font-medium title-font text-center">Gets <span className="text-blue-600">Every</span> Single <span className="text-blue-600">Updates</span> Here</h1>
   <p className="text-[16px] sm:text-[18px] md:text-[20px] text-center"> Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
 
